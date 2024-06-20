@@ -49,7 +49,7 @@ RemainAfterExit=yes
 Restart=on-failure
 
 [Install]
-WantedBy=multi-user.target  # Условие активации - multi-user.target (многопользовательский режим)
+WantedBy=multi-user.target
 EOF
 
 # Перезапуск службы 3proxy для применения изменений
