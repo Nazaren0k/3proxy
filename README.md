@@ -11,7 +11,7 @@ pass=P@ssv0rd
 ```
 # Удалить прокси
 ```
-systemctl stop3proxy
+systemctl stop 3proxy
 systemctl disable 3proxy
 rm -f /etc/systemd/system/3proxy.service
 ```
