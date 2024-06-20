@@ -1,6 +1,6 @@
 # Как использовать свой сервер в качестве прокси для антидетект браузера
 ```
-bash <(curl -s https://raw.githubusercontent.com/Nazaren0k/tools/main/3proxy.sh)
+bash <(curl -s https://raw.githubusercontent.com/Nazaren0k/3proxy/main/3proxy.sh)
 ```
 # После установки можете подключать свой браузер к прокси
 ```
