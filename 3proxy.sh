@@ -39,14 +39,14 @@ EOF
 # Настройка systemd unit файла 3proxy.service с помощью команды tee
 sudo tee <<EOF >/dev/null /etc/systemd/system/3proxy.service
 [Unit]
-Description=3proxy Proxy Server  # Описание службы 3proxy
+Description=3proxy Proxy Server
 
 [Service]
-Type=simple  # Тип службы - simple (простой)
-ExecStart=/usr/bin/3proxy /etc/3proxy/3proxy.cfg  # Команда запуска службы
-ExecStop=/bin/kill `/usr/bin/pgrep -u proxy3`  # Команда остановки службы
-RemainAfterExit=yes  # Сохранение состояния после завершения
-Restart=on-failure  # Перезапуск службы в случае ошибки
+Type=simple
+ExecStart=/usr/bin/3proxy /etc/3proxy/3proxy.cfg
+ExecStop=/bin/kill `/usr/bin/pgrep -u proxy3
+RemainAfterExit=yes
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target  # Условие активации - multi-user.target (многопользовательский режим)
